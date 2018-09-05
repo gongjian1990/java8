@@ -1,4 +1,4 @@
-package com.test.optional;
+package com.java8.optional;
 
 import org.junit.Test;
 

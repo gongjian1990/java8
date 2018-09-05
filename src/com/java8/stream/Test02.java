@@ -1,40 +1,43 @@
-package com.test.stream;
+package com.java8.stream;
 
 import org.junit.Test;
 
 import java.util.Arrays;
 import java.util.List;
 
-public class Test03 {
+public class Test02 {
 
-    List<User> list1 = Arrays.asList(
+    List<User> list = Arrays.asList(
             new User(1,"张三",13),
-            new User(2,"李四",78),
+            new User(2,"李四",18),
             new User(3,"王五",23),
             new User(4,"赵六",63),
             new User(4,"赵六",63)
     );
 
-    List<String> list = Arrays.asList("a","b","d","c");
 
     /**
-     * Stream 中间操作 sorted
+     * Stream 中间操作 map
      */
+
     @Test
     public void test01(){
+
         list.stream()
-                .sorted()
+                .map(x->x.getAge())
                 .forEach(System.out::println);
 
     }
 
     /**
-     * Stream 中间操作 sorted
+     * Stream 中间操作 mapToInt
      */
+
     @Test
     public void test02(){
-        list1.stream()
-                .sorted((x,y)->Integer.compare(x.getAge(),y.getAge()))
+
+        list.stream()
+                .mapToInt(x->x.getUid())
                 .forEach(System.out::println);
     }
 

@@ -1,4 +1,4 @@
-package com.test.stream;
+package com.java8.stream;
 
 public class Score {
 

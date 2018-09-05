@@ -1,4 +1,4 @@
-package com.test.date;
+package com.java8.date;
 
 import org.junit.Test;
 

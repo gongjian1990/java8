@@ -1,4 +1,4 @@
-package com.test.methodRef;
+package com.java8.methodRef;
 
 import org.junit.Test;
 
