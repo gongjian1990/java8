@@ -47,9 +47,9 @@ public class TestZipFile {
                 if(index!= -1){
                     entryDirPath = entryFilePath.substring(0, index);
                 }else {
-                    entryFilePath="";
+                    entryDirPath="";
                 }
-                entryDir = new File(entryFilePath);
+                entryDir = new File(entryDirPath);
                 if(entryDir.exists()){
                     entryDir.delete();
                 }
