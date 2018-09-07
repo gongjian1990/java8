@@ -4,6 +4,9 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
+/**
+ * 测试lombok插件，以及lombok简单使用
+ */
 @ToString
 public class TestPlugin {
 
