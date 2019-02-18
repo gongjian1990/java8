@@ -51,6 +51,15 @@ public class Sender {
              * 参数3 ：持久化
              * 参数4 ：优先级，0-9；0-4，普通，5-9:加急，数值越大，优先级越高
              * 参数5 ：多久过期
+
+
+             activeMq 设置优先级发送：
+             vim  apache-activemq-5.11.1/conf/activemq.xml
+
+             #大概44行左右
+             #设定queue="queue1" 设定 queue1 的队列是按优先级发送的
+             <policyEntry queue="queue1" prioritizedMessages="true" />
+
              */
             producer.send(destination,message,DeliveryMode.NON_PERSISTENT,i,2*60*1000);
 
